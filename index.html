@@ -13,12 +13,19 @@
     <button id="openApp" onclick="openApp()">http://emobilelabs.github.io/recipe-app-start/</button>
 </div>
 <br>
-
+<div>
+    <button id="openApp2" onclick="openApp2()">http://emobileLabs.github.io/recipe-app-start/grilled-potato-salad</button>
+</div>
 <br>
 </body>
 <script>
   function openApp() {
     var deepLink = "http://emobilelabs.github.io/recipe-app-start/";
+        window.location = deepLink;
+  }
+    
+    function openApp2() {
+    var deepLink = "http://emobileLabs.github.io/recipe-app-start/grilled-potato-salad";
         window.location = deepLink;
   }
    
