@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Meetmonk Applink Demo</title>
+   </head>
+   <body>
+      <h1>Class.meetmonk Android App Linking</h1>
+      <div>
+         <button id="teacher" onclick="teacherAppLink()">Teacher</button>
+      </div>
+      </br>
+      <div>
+         <button id="student1" onclick="student1AppLink()">Student1</button>
+      </div>
+      </br>
+      <div>
+         <button id="student2" onclick="student2AppLink()">Student2</button>
+      </div>
+      </br>
+      <div>
+         <button id="student3" onclick="student3AppLink()">Student3</button>
+      </div>
+      </br>
+      <div>
+         <button id="student4" onclick="student4AppLink()">Student4 Menu Disabled</button>
+      </div>
+      </br>
+   </body>
+   <script>
+      function teacherAppLink() {
+        var deepLink = "https://class.meetmonk.com/classroom?sessionName=Demo+Session&name=Teacher&role=TEACHER&participantMenu=true&auth=dXNlcjE6cGFzcw==";
+            window.location = deepLink;
+      }
+        
+        function student1AppLink() {
+        var deepLink = "https://class.meetmonk.com/classroom?sessionName=Demo+Session&name=Student1&role=STUDENT&participantMenu=true&auth=dXNlcjE6cGFzcw==";
+            window.location = deepLink;
+      }
+      
+      function student2AppLink() {
+        var deepLink = "https://class.meetmonk.com/classroom?sessionName=Demo+Session&name=Student2&role=STUDENT&participantMenu=true&auth=dXNlcjE6cGFzcw==";
+            window.location = deepLink;
+      }
+      
+      function student3AppLink() {
+        var deepLink = "https://class.meetmonk.com/classroom?sessionName=Demo+Session&name=Student3&role=STUDENT&participantMenu=true&auth=dXNlcjE6cGFzcw==";
+            window.location = deepLink;
+      }
+       
+      function student4AppLink() {
+        var deepLink = "https://class.meetmonk.com/classroom?sessionName=Demo+Session&name=Student4&role=STUDENT&participantMenu=false&auth=dXNlcjE6cGFzcw==";
+            window.location = deepLink;
+      }
+      
+      
+   </script>
+</html>
